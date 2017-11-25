@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ThuKiCreateQR.view.ThuKi_CreateQR_Activity"
+    tools:showIn="@layout/createqr_thuki_appbar">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="FUTURE HOSPITAL"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorPrimaryDark" />
+            <LinearLayout
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextClock
+                    android:gravity="right"
+                    android:layout_weight="1.7"
+                    android:id="@+id/textClock"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:format12Hour="dd-MM-yyyy"
+                    android:textColor="@color/colorDate"
+                    android:textSize="16sp"
+                    android:layout_marginRight="10dp"
+                    android:text="Clock"/>
+
+                <TextClock
+                    android:layout_weight="3.3"
+                    android:id="@+id/textClock1"
+                    android:gravity="left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:format12Hour="hh:mm:ss a"
+                    android:textColor="@color/colorDate"
+                    android:textSize="16dp"
+                    android:text="TIME" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/create_QR_addnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Tạo Thẻ"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/create_QR_managerment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Quản lý thẻ"
+            android:textColor="#ffffffff" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpTextView"
+            android:text="Chọn chức năng phù hợp ở trên"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>

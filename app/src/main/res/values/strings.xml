@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Future Hospital</string>
+    <string name="title_activity_bacsi_">Future Hospital</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Convert_Type">
+        <item>Nhập Viện</item>
+        <item>Không Nhập Viện</item>
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@color/colorBg"
+    tools:context="com.example.jackty.duan_futurehospital_app.ThuKiCreateQR.view.Quanly_TheQR_Activity">
+
+    <SearchView
+        android:id="@+id/simpleSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/edittext_login_custom"
+        android:queryHint="Tìm kiếm thẻ" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/radiogroup"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/radioTimtheoTen"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:theme="@style/RadioButtonStyle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tìm theo tên"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radioTimtheoCMND"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:theme="@style/RadioButtonStyle"
+                android:layout_weight="1"
+                android:text="Tìm theo CMND"
+
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnFind"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tìm Kiếm" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listfind"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

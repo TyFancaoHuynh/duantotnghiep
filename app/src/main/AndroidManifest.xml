@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jackty.duan_futurehospital_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconapp1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconapp1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login.view.activity.SplassScreen_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.view.activity.Login_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ThuKi.view.activity.thukimain_Activity"
+            android:label=" "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BacSi.view.activity.Bacsi_Activity"
+            android:label="@string/title_activity_bacsi_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BacSi.view.activity.Bacsi_chitietkhambenh_Activity" />
+        <activity
+            android:name=".ThuKi.view.activity.Thuki_xemthongtinbenhnhan_Activity"
+            android:label="Thông Tin Bệnh Nhân">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jackty.duan_futurehospital_app.ThuKi.view.activity.thukimain_Activity" />
+        </activity>
+        <activity
+            android:name=".ThuKiCreateQR.view.ThuKi_CreateQR_Activity"
+            android:label=" "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ThuKiCreateQR.view.Thuki_CreateQR_ADDSEVER_Activity"
+            android:label="Đăng Kí Thẻ" />
+        <activity android:name=".ThuKiCreateQR.view.ReturnQR_Activity" />
+        <activity
+            android:name=".ThuKiCreateQR.view.Quanly_TheQR_Activity"
+            android:label="Quản lý thẻ tích hợp" />
+        <activity
+            android:name=".ThuKiCreateQR.view.UpdateTheActivity"
+            android:label="Cập nhật thông tin thẻ" />
+        <activity android:name=".Demo.SendThonBaoActivity" />
+        <activity android:name=".YTaTruc.activityYTa.YtaTrucActivity" />
+
+        <service android:name=".YTaTruc.Service.CanhBaoService" />
+
+        <activity android:name=".ThuKi.view.activity.NhapBenhAnhActivity"></activity>
+    </application>
+
+</manifest>

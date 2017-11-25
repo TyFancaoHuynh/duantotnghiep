@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jackty.duan_futurehospital_app.BacSi.view.fragment.bacsi_fragment_thongbao">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Không có thông báo nào"
+               android:textSize="17dp"
+               android:id="@+id/tv_nonenoti"
+               android:visibility="gone"
+               android:layout_gravity="center"
+               android:layout_marginLeft="30dp"/>
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageButton
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/seen_notifi"
+                   android:layout_alignParentEnd="true"
+                   android:id="@+id/btn_seen"/>
+
+           </RelativeLayout>
+
+       </LinearLayout>
+
+       <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/swipe_refresh_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       <ListView
+           android:id="@+id/listview_bacsi_thongbao"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           </ListView>
+
+       </android.support.v4.widget.SwipeRefreshLayout>
+
+   </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ThuKi.view.activity.thukimain_Activity"
+    tools:showIn="@layout/thuki_app_bar_">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="FUTURE HOSPITAL"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorPrimaryDark" />
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextClock
+                    android:gravity="right"
+                    android:id="@+id/textClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:format12Hour="dd-MM-yyyy"
+                    android:textColor="@color/colorDate"
+                    android:textSize="16sp"
+                    android:layout_marginRight="10dp"
+                    android:text="Clock"/>
+
+                <TextClock
+                    android:id="@+id/textClock1"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:format12Hour="hh:mm:ss a"
+                    android:textColor="@color/colorDate"
+                    android:textSize="16dp"
+                    android:text="TIME" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@drawable/qrscan"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_quetQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Quét thẻ bệnh nhân"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/btn_huongdanQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Hướng Dẫn"
+            android:textColor="#ffffffff" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
